@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
         if (count >= 12)
         {
             winText.text = "Ganaste!";
+            UnityEngine.SceneManagement.SceneManager.LoadScene("SecondScene");
         }
     }
 }
